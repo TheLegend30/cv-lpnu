@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | Oleh Liubichenko</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <button id="theme-toggle">🌞/🌚</button>
+    <header id="header" class="day">
+      <div class="header-desc">
+        <h1>Oleh Liubichenko</h1>
+        <h2>Front-end Developer</h2>
+        <p>
+          I am Oleh Liubichenko. I'm Front-end Developer who specializes in
+          React. Nice to meet you!
+        </p>
+      </div>
+      <img src="public/avatar.jpg" alt="Oleh Liubichenko Avatar" />
+    </header>
+    <main>
+      <div class="main-container">
+        <div>
+          <h3>Contacts</h3>
+          <ul>
+            <li>☎️ Phone Number: +234 79 90 007</li>
+            <li>
+              🏡 Address: Ukraine, Poltava Region, Myrhorod, Yukhevycha st. 14
+            </li>
+            <li>✉️ Email: superrealmail@ukr.net</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li>🏫 Lviv Polytechnic Nationl University</li>
+            <li>🔒 <strong>Cybersecurity</strong> 2022-2026</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML/CSS ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>JavaScript ⭐️⭐️⭐️⭐️</li>
+            <li>React ⭐️⭐️⭐️</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div>
+          <h3>Experience</h3>
+          <ul>
+            <li>
+              <h4>👷‍♂️ Google: 2004-2010</h4>
+              <p>I worked here as Senior Full-Stack Dev</p>
+            </li>
+            <li>
+              <h4>👷‍♂️ Apple: 2010-2016</h4>
+              <p>I worked here as Lead Designer</p>
+            </li>
+            <li>
+              <h4>👷‍♂️ Facebook: 2016-2020</h4>
+              <p>I worked here as Team Lead</p>
+            </li>
+            <li>
+              <h4>👷‍♂️ McDonald's: 2020-...</h4>
+              <p>I worked here as Cleaning Manager</p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>🇺🇦 Ukrainian - Native</li>
+            <li>🏴󠁧󠁢󠁥󠁮󠁧󠁿 English - Advanced</li>
+            <li>🇹🇼 Chinese - Advanced</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Модальне вікно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Зворотній зв'язок</h2>
+        <form action="https://formspree.io/f/xovdvlqb" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Ім'я"
+            required
+          /><br /><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br /><br />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+            required
+          /><br /><br />
+          <textarea
+            name="message"
+            placeholder="Ваше повідомлення"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Відправити</button>
+        </form>
+        <button
+          onclick="closeModal()"
+          style="position: absolute; top: 10px; right: 10px"
+        >
+          X
+        </button>
+      </div>
+    </div>
+
+    <article id="comments">
+      <h2>Comments from my employers</h2>
+    </article>
+
+    <footer>
+      <p id="footer-text">&copy; 2025 olehliubichenko.com.ua</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
